@@ -1,0 +1,225 @@
+
+.container {  
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  padding: 20px; 
+}
+
+.add-appointment{
+  justify-content: center;
+  margin-top: 70px; 
+  display:inline-block;
+  min-width: 80vw;
+}
+
+.add-appointment div{
+  display: flex;
+  gap:20px;
+}
+
+.add-container{
+  background-color:#f8f9fa;
+  padding:10px;
+  padding-top:16px;
+  border-radius: 10px;
+  margin-top:10px;
+}
+
+.filters {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.filter-input {
+  position: relative;
+  width: 200px;
+}
+
+.filter-input input,
+.filter-input .react-datepicker-wrapper input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.datepicker-container {
+  position: relative;
+}
+
+.calendar-icon {
+  position: absolute;
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.datepicker-container input {
+  padding-left: 35px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;  
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  text-align: left !important;
+}
+
+td{font-size:14px;}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.popup p{text-align: left;}
+
+.popup .date-update-section {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.popup .date-update-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.popup button {margin-left:10px;font-size: 14px;margin-top:13px;
+  float:right;}
+
+.popup .date-update-section .react-datepicker-wrapper {
+  width: 100%;
+}
+
+
+.add-appointment-container {
+  background-color: #f8f9fa;
+  border-radius: 8px; 
+  padding: 16px; 
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-appointment-container .form-control {
+  max-width: 200px; 
+  margin-right: 8px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none; 
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838; 
+}
+
+
+@media (min-width: 568px) and (max-width: 868px) {
+  .filter-input {
+    position: relative;
+    width: 130px;
+  }
+}
+
+@media (max-width: 568px) {
+  .filter-input {
+    position: relative;
+    width: 75px;
+  }
+
+  .filters {    
+    gap: 18px;    
+  }
+
+  .add-appointment div {
+    display: inline-block;
+    gap: 20px;
+  }
+
+  th {
+    background-color: #f4f4f4;
+    text-align: left !important;
+    font-size: 13px;
+  }
+
+  th {  
+    font-size: 13px;
+  }
+
+  .popup{
+    width: 85vw;
+  }
+
+  .add-appointment div {  
+    width: 85vw;
+  }
+
+  .popup button {
+    margin-left: 10px;
+    font-size: 14px;
+    
+  }
+
+  .react-datepicker__input-container input{
+
+    font-size:14px !important;
+  }
+
+  .react-datepicker {  
+    display: flex;  
+  }
+
+}
+
+
